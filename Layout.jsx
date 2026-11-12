@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { NavLink, Link, Outlet, useLocation } from 'react-router-dom'
-import { BRAND, waLink } from '../data/site.js'
+import { BRAND, waLink } from './site.js'
 const NAV=[['/','Home'],['/about','About'],['/packages','Packages'],['/domestic','Domestic'],['/international','International'],['/honeymoon','Honeymoon'],['/family','Family'],['/group','Group'],['/weekend','Weekend'],['/hotels','Hotels'],['/transport','Flights & Trains'],['/cab','Cabs'],['/planner','Trip Planner'],['/gallery','Gallery'],['/testimonials','Reviews'],['/contact','Contact']]
 export default function Layout(){
  const [open,setOpen]=useState(false); const {pathname}=useLocation()
