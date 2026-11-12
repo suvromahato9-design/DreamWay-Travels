@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import Layout from './components/Layout.jsx'
+import Layout from './Layout.jsx'
 import { Home, About, Category, Packages, Service, Gallery, Testimonials, Contact, Policy } from './pages/Pages.jsx'
 export default function App(){ return (
 <Routes><Route element={<Layout/>}>
