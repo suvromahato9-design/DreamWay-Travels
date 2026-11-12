@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { waLink } from '../data/site.js'
+import { waLink } from './site.js'
 export default function PackageCard({p}){ return (
 <article className="card"><div className="ph" style={{'--h':p.hue}} role="img" aria-label={`${p.title} (photo placeholder)`}><small>Sample photo area</small></div>
  <div className="cb"><h3>{p.title}</h3><p>{p.blurb}</p><p className="meta">{p.days} · Price on request</p>
