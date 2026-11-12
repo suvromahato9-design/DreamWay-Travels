@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BRAND } from '../data/site.js'
+import { BRAND } from './site.js'
 const ID=import.meta.env.VITE_FORMSPREE_ID
 const init={name:'',email:'',phone:'',destination:'',from:'',start:'',end:'',adults:2,children:0,rooms:1,pref:'Any',budget:'',notes:''}
 function F({k,label,v,set,err,type='text',...r}){return <label>{label}<input type={type} value={v[k]} onChange={set(k)} aria-invalid={!!err[k]} {...r}/>{err[k]&&<span className="err" role="alert">{err[k]}</span>}</label>}
