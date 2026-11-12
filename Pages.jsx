@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import { BRAND, PACKAGES, PAGES, TESTIMONIALS, POLICIES, waLink } from '../data/site.js'
-import PackageCard from '../components/PackageCard.jsx'
-import BookingForm from '../components/BookingForm.jsx'
+import { BRAND, PACKAGES, PAGES, TESTIMONIALS, POLICIES, waLink } from './site.js'
+import PackageCard from './PackageCard.jsx'
+import BookingForm from './BookingForm.jsx'
 const Head=({t,s})=><section className="head"><h1>{t}</h1>{s&&<p>{s}</p>}</section>
 const Grid=({list})=><div className="grid">{list.map(p=><PackageCard key={p.id} p={p}/>)}</div>
 export const Home=()=><>
